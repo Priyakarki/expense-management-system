@@ -8,7 +8,8 @@ export const addExpense = async (req, res) => {
             title,
             amount,
             category,
-            date
+            date,
+             user: req.userId
         });
 
         res.status(201).json({
